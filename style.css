@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #f7f0f0;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  flex: 1;
+}
+
+.menu a {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #f1e9e9;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  padding-bottom: .2em;
+}
+
+
+
+/* header styles */
+header {
+  color: rgba(245, 241, 241, 0.944);
+  background:  url(sapa.img) no-repeat center center;
+  background-size: cover; 
+  text-align: center;
+  height: 15em;
+}
+
+header p {
+  font-style: italic;
+  font-size: 1.5em;
+  margin-top: -12px;
+}
+header h1 {
+  margin-top: 1.5em;
+  font-size: 2.5em;
+}
+
+
+/* nav styles */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111468;
+}
+nav {
+    text-align: center;
+    font-style: oblique;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #0c774e;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  
+}
+nav ul li {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 	
+  border-radius: .5em; 	
+  padding: .5em 1em; 	
+  margin: .5em; 
+} 
+
+
+/* main "products" styles */
+main {
+  font-family: Arial serif;
+  background-color: white;
+  line-height: 1.8em;
+  color: #1a1a14;
+  padding: 1em;
+  margin: 2.5%;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #1f0565;
+  padding-left: 1em;
+  margin-top: 2.5em;
+}
+p.more {
+  font-family: arial, sans-serif;
+  text-transform: uppercase; 
+  font-size: .8em;
+  clear: left;
+
+}
+div {
+  margin: 0 8em 0 8em;
+}
+main img {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+
+
+/* aside "hours" styles */
+aside {
+ 
+  padding: 1em;
+  padding-left: 45px;
+  border-top-right-radius: 25px;
+  margin: 1em 2.5% 0 10%;
+  text-align: center;
+}
+
+footer {
+  color: #6f15c3;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
+h2 {
+  font-family: Arial serif;
+  text-align: center;
+
+}
+.day {
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.dulich{
+  display:flex;
+  justify-content: space-between;
+}
+form {
+  white-space: nowrap;  
+}
+
+.image-container {
+  display: flex; /* Sử dụng flexbox để trải ảnh theo hàng ngang */
+  justify-content: center; /* Căn giữa các ảnh */
+  flex-wrap: nowrap; /* Ngăn ngừa xuống dòng */
+  overflow-x: auto; /* Bật cuộn ngang nếu cần */
+  padding: 10px; /* Khoảng cách bên trong */
+  border: 1px solid #ccc; /* Thêm viền cho khung */
+}
+.image-container img {
+  margin: 0 10px; /* Khoảng cách giữa các ảnh */
+  height: 150px; /* Đặt chiều cao cho ảnh */
+  object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+
+

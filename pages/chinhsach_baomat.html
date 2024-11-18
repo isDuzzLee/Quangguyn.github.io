@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <title>Chính Sách Bảo Mật</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="../assets/css/bootstrap_icons/bootstrap-icons.min.css">
+
+  <!-- Hover.css -->
+  <link rel="stylesheet" href="../assets/css/hover_css/hover-min.css">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    #Article {
+      margin: 0 6em;
+      padding: 1em 1.25em;
+      font-size: 18px;
+    }
+    #Article-Heading {
+      margin: 0 3em;
+    }
+    #Article-list {
+      margin: 0 9em;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- nav 1 -->
+    <nav class="bg-dark border-bottom border-body py-0">
+      <div class="container-md px-4">
+        <div class="d-flex justify-content-between align-items-center d-block">
+          <ul class="navbar-nav flex-row gap-4 py-2">
+            <li class="nav-item">
+              <span class="text-white">
+                <small>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a class="d-inline ps-1" href="tel:0365789632">0365789632</a>
+                </small>
+              </span>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+              <span class="text-white">
+                <small>
+                  <i class="bi bi-envelope-fill"></i>
+                  <a class="d-inline ps-1" href="mailto:Bliss&Bold@gmail.com">Bliss&Bold@gmail.com</a>
+                </small>
+              </span>
+            </li>
+          </ul>
+          <a href="../pages/login.html" class="btn btn-outline-light d-flex p-0 px-2 py-1">
+            <i class="bi bi-person-fill"></i>
+            <div><small class="ps-1">Đăng nhập</small></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Logo -->
+    <div style="text-align: center;">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Our Bookshelf ForYou" class="img-fluid">
+      </a>
+    </div>
+    <!-- nav 2 -->
+    <nav class="navbar navbar-expand-md border-top p-0">
+      <div class="container-md">
+        <button class="navbar-toggler focus-ring focus-ring-light my-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-0 pb-1 pb-md-0 gap-lg-4">
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="../index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="../pages/introductionOurshelf.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <!-- <a class="nav-link active active-link
+              link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="../pages/giasach.html">Sách</a> -->
+              <div class="dropdown">
+                <a class="nav-link active active-link
+                link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="../pages/giasach.html">Sách</a>
+                <div class="dropdown-content">
+                    <a class="a" href="">Sách kỹ năng</a>
+                    <a class="a" href="">Sách tâm lý</a>
+                    <a class="a" href="">Sách văn học</a>
+                    <a class="a" href="">Sách tiểu sử</a>
+                </div>
+            </div>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="../pages/tacgia.html">Tác giả</a>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="../pages/lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-dark my-1 me-2" type="button">
+          <a href="../pages/cart.html">
+            <i class="bi-cart-fill me-1"></i>
+            Giỏ hàng
+            <span id="cartCount" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+          </a>
+        </button>
+      </div>
+    </nav>
+    <!-- Breadcum -->
+    <div class="bg-white">
+      <div class="container-md py-3">
+        <nav aria-label="breadcrumb" class="ms-2">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active active text-primary text-opacity-75"><a href="../pages/chinhsach_baomat.html">Chính Sách Bảo Mật</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main content -->
+  <main>
+    <h1 style="text-align: center; padding: 1em; font-size: 60px">Chính sách bảo mật</h1>
+      <br>
+      <h2 id="Article-Heading">1. Mục đích và phạm vi thu thập</h2>
+        <p id="Article">Việc thu thập dữ liệu chủ yếu trên website bao gồm: họ tên, email, điện thoại, địa chỉ khách hàng trong mục liên hệ. 
+          Đây là các thông tin mà chúng tôi cần thành viên cung cấp bắt buộc khi gửi thông tin nhờ tư vấn hay muốn mua sản phẩm và để chúng tôi 
+          liên hệ xác nhận lại với khách hàng trên website nhằm đảm bảo quyền lợi cho cho người tiêu dùng.</p>
+
+        <p id="Article">Các thành viên sẽ tự chịu trách nhiệm về bảo mật và lưu giữ mọi hoạt động sử dụng dịch vụ dưới thông tin mà mình cung cấp và 
+          hộp thư điện tử của mình. Ngoài ra, thành viên có trách nhiệm thông báo kịp thời cho webiste chúng tôi về 
+          những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật, lưu giữ tên đăng ký và mật khẩu
+          của bên thứ ba để có biện pháp giải quyết phù hợp.</p>
+
+      <br>
+      <h2 id="Article-Heading">2. Phạm vi sử dụng thông tin</h2>
+        <p id="Article">Chúng tôi sử dụng thông tin thành viên cung cấp để:</p>
+        <ul id="Article-list">
+          <li>Liên hệ xác nhận đơn hàng và giao hàng cho thành viên khi nhận được yêu cầu từ thành viên.</li>
+          <li>Cung cấp thông tin về sản phẩm đến khách hàng nếu có yêu cầu từ khách hàng.</li>
+          <li>Gửi email tiếp thị, khuyến mại về hàng hóa do chúng tôi bán.</li>
+          <li>Gửi các thông báo về các hoạt động trên website.</li>
+          <li>Liên lạc và giải quyết với người dùng trong những trường hợp đặc biệt.</li>
+          <li>Không sử dụng thông tin cá nhân của người dùng ngoài mục đích xác nhận và liên hệ có liên quan đến giao dịch.</li>
+          <li>Khi có yêu cầu của cơ quan tư pháp bao gồm: 
+            <u>Viện kiểm sát, tòa án, cơ quan công an</u> điều tra liên quan đến hành vi vi phạm pháp luật nào đó của khách hàng.</u></small></li>
+        </ul></p>
+
+        <br>
+        <h2 id="Article-Heading">3. Thời gian lưu trữ thông tin</h2>
+          <p id="Article">Dữ liệu cá nhân của thành viên sẽ được lưu trữ cho đến khi có yêu cầu ban quản trị hủy bỏ.
+            Còn lại trong mọi trường hợp thông tin cá nhân thành viên sẽ được bảo mật trên máy chủ của chúng tôi</p>
+        
+        <br>
+        <h2 id="Article-Heading">4. Những người hoặc tổ chức có thể được tiếp cận với thông tin đó</h2>
+          <p id="Article">Đối tượng được tiếp cận với thông tin cá nhân của khách hàng thuộc một trong những trường hợp sau:
+          <ul id="Article-list">
+            <li>Nhân viên của công ty</li>
+            <li>Các đối tác có ký hợp động thực hiện 1 phần dịch vụ của Công Ty. 
+              Các đối tác này sẽ nhận được những thông tin theo thỏa thuận hợp đồng 
+              (có thể 1 phần hoặc toàn bộ thông tin tuy theo điều khoản hợp đồng) 
+              để tiến hành hỗ trợ người dùng sử dụng dịch vụ do Công ty cung cấp.</li>
+          </ul>
+
+        <br>
+        <h2 id="Article-Heading">5. Phương thức và công cụ để người tiêu dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình
+           trên hệ thống thương mại điện tử của đơn vị thu thập thông tin.</h2>
+          <p id="Article">Thành viên có quyền tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình
+              bằng cách liên hệ với ban quản trị website thực hiện việc này.</p>
+          
+          <p id="Article">Thành viên có quyền gửi khiếu nại về nội dung bảo mật thông tin đề nghị liên hệ Ban quản trị của website.
+            Khi tiếp nhận những phản hồi này, chúng tôi sẽ xác nhận lại thông tin, 
+            trường hợp đúng như phản ánh của thành viên tùy theo mức độ, chúng tôi sẽ có những biện pháp xử lý kịp thời.</p>
+
+        <br>
+        <h2 id="Article-Heading">6. Cơ chế tiếp nhận và giải quyết khiếu nại của người tiêu dùng liên quan đến việc thông tin cá nhân
+         bị sử dụng sai mục đích hoặc phạm vi đã thông báo.</h2>
+          <p id="Article">Thông tin cá nhân của thành viên được cam kết bảo mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân.
+           Việc thu thập và sử dụng thông tin của mỗi thành viên chỉ được thực hiện khi có sự đồng ý của khách hàng
+           đó trừ những trường hợp pháp luật có quy định khác.</p>
+
+          <p id="Article">Không sử dụng, không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá nhân của thành viên
+           khi không có sự cho phép đồng ý từ thành viên.</p>
+      
+          <p id="Article">Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dẫn đến mất mát dữ liệu cá nhân thành viên,
+           chúng tôi sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng 
+           điều tra xử lý kịp thời và thông báo cho thành viên được biết.</p>
+      
+          <p id="Article">Bảo mật tuyệt đối mọi thông tin giao dịch trực tuyến của thành viên bao gồm thông tin hóa đơn kế toán chứng từ số hóa</p>
+      
+          <p id="Article">Ban quản lý yêu cầu các cá nhân khi đăng ký/mua hàng phải cung cấp đầy đủ 
+           thông tin cá nhân có liên quan như: Họ và tên, địa chỉ liên lạc, email, điện thoại,…., 
+           và chịu trách nhiệm về tính pháp lý của những thông tin trên. 
+           Ban quản lý không chịu trách nhiệm cũng như không giải quyết mọi khiếu nại 
+           có liên quan đến quyền lợi của thành viên đó nếu xét thấy tất cả thông tin cá nhân của thành viên
+           đó cung cấp khi đăng ký ban đầu là không chính xác.</p>
+        <br>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer border-top py-5">
+    <div class="container-md">
+      <div class="row px-3 mx-2">
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="fw-bold mb-4">Về Bliss & Bold</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Giới
+                  thiệu</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Liên
+                  hệ</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Hệ
+                  thống cửa hàng</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="fw-bold mb-4">Hỗ trợ</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách vận chuyển</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách bảo hành</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách đổi - trả - hoàn tiền</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="fw-bold mb-4">Dịch vụ</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Điều
+                  khoản sử dụng</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách bảo mật<br>(Thanh Toán & Thông Tin Cá Nhân)</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <form action="">
+            <h6 class="fw-bold mb-4">Đăng ký nhận thông tin</h6>
+            <div class="d-flex flex-sm-row w-100">
+              <label for="newsletter" class="visually-hidden">Email address</label>
+              <input id="newsletter" type="email" class="form-control rounded-0 focus-ring focus-ring-light"
+                style="width:300px" placeholder="Email address" required>
+              <button class="btn btn-dark rounded-0 z-3" type="submit">Đăng ký</button>
+            </div>
+          </form>
+          <div class="mt-3">
+            <h6 class="fw-bold mb-2">Theo dõi chúng tôi</h6>
+            <ul class="list-unstyled d-flex">
+              <li class="me-3">
+                <a  class="link-body-emphasis" href="https://www.facebook.com/" target="_blank">
+                  <i class="bi bi-facebook fs-4"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank">
+                  <i class="bi bi-instagram fs-4"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a class="link-body-emphasis fs-4" href="https://twitter.com/" target="_blank">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="../assets/js/bootstrap/popper.min.js"></script>
+  <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+  <!-- Custom js -->
+  <script src="../js/data.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/search.js"></script>
+</body>
+
+</html>

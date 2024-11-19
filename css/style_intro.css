@@ -1,0 +1,88 @@
+/* Tổng quan */
+main {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chính */
+main .container-md {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tiêu đề chính */
+h1,
+h2 {
+  color: #800020;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top: 80px;
+}
+
+/* Đoạn văn */
+main p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+/* Ảnh banner */
+.text-center img {
+  display: block;
+  margin: 20px auto;
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề phụ */
+h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #800020;
+  margin: 10px auto;
+}
+
+/* Danh sách */
+main ul {
+  padding-left: 20px;
+}
+
+main li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+main li::marker {
+  color: #800020;
+  font-size: 20px;
+}
+
+/* Dịch vụ (hover) */
+h2:hover {
+  color: #800020;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Khoảng cách giữa các phần */
+main .mb-5 {
+  margin-bottom: 40px;
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../assets/&.png" type="image/x-icon">
-  <title>Thanh toán</title>
+  <title>Giới thiệu</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
@@ -13,12 +13,20 @@
   <!-- Bootstrap icon -->
   <link rel="stylesheet" href="../assets/css/bootstrap_icons/bootstrap-icons.min.css">
 
+  <!-- Hover.css -->
+  <link rel="stylesheet" href="../assets/css/hover_css/hover-min.css">
+
   <!-- Custom css -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style_intro.css">
+  <style>
+    .container p {
+      text-align: justify;
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- Header -->
   <header>
            <!-- nav 1 -->
@@ -171,8 +179,8 @@
         <nav aria-label="breadcrumb" class="ms-2">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
-            <li class="breadcrumb-item">Giỏ hàng</li>
-            <li class="breadcrumb-item active text-primary text-opacity-75" aria-current="page">Thanh toán</li>
+            <li class="breadcrumb-item active text-primary text-opacity-75"><a
+                href="../pages/introductionOurshelf.html">Giới thiệu</a></li>
           </ol>
         </nav>
       </div>
@@ -181,106 +189,71 @@
 
   <!-- Main content -->
   <main>
-    <div class="container-md py-5">
-      <div class="card">
-        <div class="">
-          <form class="row g-0" action="./sau_thanh_toan.html">
-            <div class="col-lg-7 col-xl-8 p-sm-5 p-4">
-              <div class="row">
-                <div class="col-xl-6">
-                  <h4 class="mb-3 fw-bold">Thông tin đặt hàng</h4>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label for="firstName" class="form-label">Họ và tên đệm <span class="text-danger">*</span></label>
-                      <input type="text" class="form-control" id="firstName" placeholder="Họ và tên đệm" required>
-                    </div>
+    <div class="container-md">
+      <div class="container mb-5">
+        <div class="about-us">
+          <br/>
+          <h1 style="text-align: center;">Giới thiệu B&B - Sự khác biệt nổi bật!</h1>
 
-                    <div class="col-sm-6">
-                      <label for="lastName" class="form-label">Tên <span class="text-danger">*</span></label>
-                      <input type="text" class="form-control" id="lastName" placeholder="Tên" required>
-                    </div>
+          <div class="text-center" >
+            <img src="../assets/images/bannerintro.png" alt="B&B-banner" style="height: 300px" width="auto">
+          </div>
 
-                    <div class="col-12">
-                      <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                    </div>
+          <p>
+            Chào mừng bạn đến với <strong>B&B</strong>, nơi những tín đồ thời trang trẻ trung và năng động tìm thấy phong cách đích thực của mình.
+          </p>
+          
+        </div>
+        <div class="mission">
+          <h2>Tầm Nhìn Và Sứ Mệnh</h2>
+          <p>
+            Tại <strong>B&B</strong>, chúng tôi tin rằng thời trang không chỉ là những bộ quần áo, mà còn là cách bạn thể hiện bản thân và khẳng định sự tự tin, cá tính. Chúng tôi hướng đến việc trở thành người bạn đồng hành đáng tin cậy trong hành trình khơi dậy phong cách và truyền cảm hứng sống tích cực cho giới trẻ.
+          </p>
 
-                    <div class="col-12">
-                      <label for="address" class="form-label">Địa chỉ <span class="text-danger">*</span></label>
-                      <input type="text" class="form-control" id="address" placeholder="Địa chỉ"
-                        required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="phone" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
-                      <input type="tel" class="form-control" id="phone" placeholder="Số điện thoại" required>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="zip" class="form-label">Zip code <span class="text-muted">(Optional)</span></label>
-                      <input type="text" class="form-control" id="zip" placeholder="">
-                    </div>
-
-                    <div class="col-12">
-                      <label for="note" class="form-label">Ghi chú <span class="text-muted">(Tùy chọn)</span></label>
-                      <textarea type="text" class="form-control" id="note" placeholder=""></textarea>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xl-6">
-
-                  <h4 class="mb-3 fw-bold my-3">Phương thức thanh toán</h4>
-
-                  <div class="p-2 border border-2 rounded bg-body-tertiary my-3">
-                    <div class="form-check m-0">
-                      <input class="form-check-input" type="radio" name="payment" id="payment" checked>
-                      <label class="form-check-label" for="payment">
-                        Thanh toán khi nhận hàng
-                      </label>
-                    </div>
-                  </div>
-
-                  <div class="p-2 border border-2 rounded bg-body-tertiary my-3">
-                    <div class="form-check m-0">
-                      <input class="form-check-input" type="radio" name="payment" id="payment" checked>
-                      <label class="form-check-label" for="payment">
-                        Chuyển khoản ngân hàng
-                      </label>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-xl-4 p-sm-5 p-3 rounded-end bg-secondary-subtle">
-              <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="">Tổng giá trị</span>
-                <span id="productCount" class="badge bg-black rounded-pill">0</span>
-              </h4>
-              <ul id="summaryList" class="list-group">
-                <div id="divider"></div>
-                <li class="list-group-item d-flex justify-content-between">
-                  <h6 class="my-0">Vận chuyển</h6>
-                  <span>35.000₫</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between border-top-0 py-3">
-                  <span>Tổng</span>
-                  <strong id="totalPrice"></strong>
-                </li>
-              </ul>
-              <div class="d-xxl-flex d-lg-block d-flex justify-content-between mx-1">
-                <a href="./cart.html" class="btn btn-outline-dark mt-2">
-                  <i class="bi bi-arrow-left-short"></i>
-                  Quay lại giỏ hàng
-                </a>
-                <button class="btn btn-dark mt-2" type="submit">
-                  Xác nhận
-                  <i class="bi bi-check"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+          <p>
+            Với slogan <strong>"Bliss & Bold"</strong>, <strong>B&B</strong> mong muốn mang đến niềm vui <strong>(Bliss)</strong> và sự táo bạo <strong>(Bold)</strong> trong từng sản phẩm, giúp bạn tự tin tỏa sáng theo cách riêng của mình.
+          </p>
+        </div>
+        <div class="vision">
+          <h2>Điều Gì Tạo Nên Sự Khác Biệt Của B&B?</h2>
+          <p>
+            <ul>
+              <li><i>Phong cách trẻ trung, độc đáo</i>: Các thiết kế tại B&B luôn hướng đến sự tươi mới, năng động, giúp bạn nổi bật giữa đám đông.</li>
+              <li><i>Chất lượng hàng đầu</i>: Chúng tôi cam kết mang đến những sản phẩm chất lượng, từ chất liệu vải cao cấp đến từng đường kim mũi chỉ.</li>
+              <li><i>Giá cả hợp lý</i>: Dễ dàng sở hữu phong cách riêng mà không lo ngại về giá.</li>
+              <li><i>Dịch vụ tận tâm</i>: Đội ngũ tư vấn của <strong>B&B</strong> luôn sẵn sàng hỗ trợ bạn trong hành trình tìm kiếm phong cách lý tưởng.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="service">
+          <h2>Dịch Vụ Tại B&B</h2>
+          <p><strong>B&B</strong> không chỉ mang đến sản phẩm, mà còn chú trọng trải nghiệm của khách hàng với các dịch vụ chu đáo:</p>
+          <ul>
+            <li><i>Tư vấn thời trang cá nhân</i>: Đội ngũ chuyên gia của chúng tôi sẵn sàng gợi ý những bộ trang phục phù hợp với phong cách và cá tính riêng của bạn.</li>
+            <li><i>Giao hàng nhanh chóng</i>: Với mạng lưới vận chuyển hiệu quả, chúng tôi cam kết giao hàng đến tay bạn trong thời gian ngắn nhất.</li>
+            <li><i>Chính sách đổi trả dễ dàng</i>: Đảm bảo bạn hoàn toàn hài lòng với sản phẩm.</li>
+            <li><i>Ưu đãi thành viên</i>: Đăng ký tài khoản B&B để nhận ngay các ưu đãi độc quyền, quà tặng sinh nhật, và thông báo sớm về các chương trình giảm giá.</li>
+            <li><i>Đặt hàng thiết kế riêng</i>: Nếu bạn cần những sản phẩm mang dấu ấn cá nhân, dịch vụ thiết kế riêng của <strong>B&B</strong> sẽ giúp biến ý tưởng của bạn thành hiện thực.</li>
+          </ul>
+        </div>
+        <div class="values">
+          <h2>Giá Trị Cốt Lõi</h2>
+          <p>
+            <strong>Chất lượng</strong>: Chúng tôi cam kết cung cấp những cuốn sách chất lượng
+            nhất.
+          </p>
+          <p>
+            <strong>Đa dạng</strong>: Đa dạng hóa các thể loại sách để đáp ứng nhu cầu của mọi
+            đối tượng khách hàng.
+          </p>
+          <p>
+            <strong>Khách hàng</strong>: Luôn đặt khách hàng lên hàng đầu, phục vụ tận tâm và chu
+            đáo.
+          </p>
+          <p>
+            <strong>Phát triển bền vững</strong>: Xây dựng một môi trường làm việc chuyên nghiệp,
+            bền vững cho nhân viên và cộng đồng.
+          </p>
         </div>
       </div>
     </div>
@@ -350,7 +323,7 @@
           <form action="">
             <h6 class="fw-bold mb-4">Đăng ký nhận thông tin</h6>
             <div class="d-flex flex-sm-row w-100">
-              <label for="newsletter" class="visually-hidden">Email address </label>
+              <label for="newsletter" class="visually-hidden">Email address</label>
               <input id="newsletter" type="email" class="form-control rounded-0 focus-ring focus-ring-light"
                 style="width:300px" placeholder="Nhập email của bạn" required>
               <button class="btn btn-dark rounded-0 z-3" type="submit">Đăng ký</button>
@@ -381,7 +354,6 @@
     </div>
   </footer>
 
-
   <!-- Bootstrap -->
   <script src="../assets/js/bootstrap/popper.min.js"></script>
   <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
@@ -389,8 +361,7 @@
   <!-- Custom js -->
   <script src="../js/data.js"></script>
   <script src="../js/script.js"></script>
-  <script src="../js/checkout.js"></script>
-
+  </script>
 </body>
 
 </html>

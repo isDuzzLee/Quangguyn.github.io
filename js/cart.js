@@ -4,11 +4,12 @@ const checkoutButton = document.getElementById("checkoutButton");
 function initCart() {
   if (cartCount.innerText === "0") {
     let noti = document.createElement("h6");
-    noti.innerText = "Giỏ hàng của bạn trống. Quay lại cửa hàng để lựa chọn sản phẩm";
+    noti.innerText =
+      "Giỏ hàng của bạn trống. Quay lại cửa hàng để lựa chọn sản phẩm";
     cartList.appendChild(noti);
     checkoutButton.classList.add("disabled");
   } else {
-    cart.forEach(item => {
+    cart.forEach((item) => {
       if (item != null) {
         const id = item.id;
         let newBook = document.createElement("div");
@@ -16,8 +17,8 @@ function initCart() {
           <div class="row mb-4 d-flex justify-content-between align-items-center pb-4 border-bottom">
             <div class="col-4 col-xl-2 px-0 px-sm-2">
               <img
-                src="../assets/images/books/${books[id].url}.jpg"
-                class="img-fluid rounded-3" alt="book">
+                src="../assets/images/${books[id].url}.jpg"
+                class="img-fluid rounded-3" alt="clothing">
             </div>
             <div class="row col-6 col-xl-9">
               <div class="col-xl-4">
@@ -48,12 +49,11 @@ function initCart() {
               <input type="text" class="d-none" value="${id}" />
             </div>
           </div>
-        `
+        `;
         cartList.appendChild(newBook);
       }
     });
   }
-
 }
 
 initCart();
@@ -63,17 +63,16 @@ const totalPrice = document.getElementById("totalPrice");
 function updateTotalPrice() {
   const count = cart.reduce((accumulator, currentValue) => {
     if (currentValue != null) {
-      return accumulator + books[currentValue.id].price * currentValue.amount
+      return accumulator + books[currentValue.id].price * currentValue.amount;
     }
     return accumulator;
-  }, 0
-  );
+  }, 0);
   totalPrice.innerText = `${formatPrice(count)}.000₫`;
 }
 
 updateTotalPrice();
 
-document.querySelectorAll(".plus-button").forEach(e => {
+document.querySelectorAll(".plus-button").forEach((e) => {
   if (parseInt(e.nextElementSibling.innerText) === 1) e.disabled = true;
   e.addEventListener("click", () => {
     const id = parseInt(e.parentElement.previousElementSibling.value);
@@ -88,7 +87,7 @@ document.querySelectorAll(".plus-button").forEach(e => {
   });
 });
 
-document.querySelectorAll(".minus-button").forEach(e => {
+document.querySelectorAll(".minus-button").forEach((e) => {
   e.addEventListener("click", () => {
     let amount = parseInt(e.previousElementSibling.innerText);
     e.previousElementSibling.innerText = amount + 1;
@@ -103,7 +102,7 @@ document.querySelectorAll(".minus-button").forEach(e => {
   });
 });
 
-document.querySelectorAll(".remove-button").forEach(e => {
+document.querySelectorAll(".remove-button").forEach((e) => {
   e.addEventListener("click", () => {
     const id = parseInt(e.nextElementSibling.value);
     cart[id] = null;
@@ -112,7 +111,8 @@ document.querySelectorAll(".remove-button").forEach(e => {
 
     if (cartCount.innerText === "0") {
       let noti = document.createElement("h6");
-      noti.innerText = "Giỏ hàng của bạn trống. Quay lại cửa hàng để lựa chọn sản phẩm.";
+      noti.innerText =
+        "Giỏ hàng của bạn trống. Quay lại cửa hàng để lựa chọn sản phẩm.";
       cartList.appendChild(noti);
       checkoutButton.classList.add("disabled");
     }
